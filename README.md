@@ -61,7 +61,7 @@ Our data is fine-grained, we use the standard 5 labels (-2 to 2) to represent st
 
 This simplification of the results of many runs of the program shows promise, we can see a relevant difference in the performance of these models against each other. We see the group and event target models underperforming in comparison to the individual target model, however, the individual dataset is the largest. Further research is needed to decide whether learning about groups or events is confounding to classifying sentiment about some categories. 
 
-##Future work: 
+## Future work: 
 A larger dataset would allow us to compare our models more effectively. We don't have enough data to have generalizable tests for same-category classification. For example, an event-based model may train on tweets about thanksgiving, and then see tweets about turkey in the test phase. We expect the performance of same-category classification to be slightly positively skewed as a result. A larger dataset would also allow us to see more fine-grained data. Heavy undersampling was needed in order to balance the sentiment of the sets, tweets were generally much more positive about events than they were about groups of people. Many of the extreme values had to be removed to allow for comparison.
 
 Although our research question is motivated by using fewer tweets, we would like to try this experiment with a pretrained model with a large twitter corpus, like bertweet. We would expect to see a performance boost from pretraining with emojis and a more representative volcabulary
